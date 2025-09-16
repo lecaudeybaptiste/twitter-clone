@@ -5,10 +5,9 @@ Objectifs : connexion / déconnexion, création et suppression de tweet, répons
 
 ## 🚀 Démo & ressources
 
-- **Vidéo de démonstration (YouTube non-répertoriée)** : [lien à insérer]
-- **Déploiement (Netlify/Vercel)** : [lien à insérer]
-- **CodeSandbox (optionnel)** : [lien à insérer]
-- **Repo GitHub** : [ce dépôt]
+- **Vidéo de démonstration (YouTube non-répertoriée)** : https://youtu.be/8sKhjgZ9j8k
+- **CodeSandbox (optionnel)** : https://codesandbox.io/p/github/lecaudeybaptiste/twitter-clone/main?workspaceId=ws_QJDRx3FasgRdPGXpiaZHpz
+- **Repo GitHub** : https://github.com/lecaudeybaptiste/twitter-clone
 
 ## 🛠️ Stack
 
