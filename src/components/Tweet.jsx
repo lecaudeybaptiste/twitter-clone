@@ -56,7 +56,7 @@ export default function Tweet({ tweet }) {
     return () => unsub();
   }, [tweet.id]);
 
-  // Replies count
+  // Nombre de réponses
   useEffect(() => {
     const q = collection(db, "tweets", tweet.id, "replies");
     const unsub = onSnapshot(q, (snapshot) => setReplyCount(snapshot.size));
@@ -140,7 +140,7 @@ export default function Tweet({ tweet }) {
     }
   };
 
-  // Share
+  // Partager
   const handleShare = (e) => {
     e.stopPropagation();
     navigator.clipboard.writeText(
@@ -149,7 +149,7 @@ export default function Tweet({ tweet }) {
     alert("Lien copié !");
   };
 
-  // Delete
+  // Supprimer
   const handleDelete = async (e) => {
     e.stopPropagation();
     if (!user || user.uid !== tweet.userId) return;
@@ -224,7 +224,7 @@ export default function Tweet({ tweet }) {
           </button>
         </div>
 
-        {/* À droite : Share + Supprimer */}
+        {/* À droite : Partager + Supprimer */}
         <div className="flex gap-4 items-center">
           <button
             type="button"

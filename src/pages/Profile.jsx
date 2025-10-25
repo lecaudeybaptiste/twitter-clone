@@ -234,7 +234,7 @@ export default function Profile() {
     }
   };
 
-  // Liste des followings de l'utilisateur connecté
+  // Liste des abonnements de l'utilisateur connecté
   useEffect(() => {
     if (!user) return;
     const q = query(
@@ -254,7 +254,7 @@ export default function Profile() {
 
   return (
     <div className="max-w-2xl mx-auto bg-white shadow rounded overflow-hidden">
-      {/* Cover */}
+      {/* Couverture */}
       <div className="relative w-full h-40">
         <img
           src={
@@ -408,7 +408,7 @@ export default function Profile() {
             </h2>
 
             <div className="flex flex-col gap-6">
-              {/* Cover */}
+              {/* Couverture */}
               <div className="relative w-full h-32 bg-gray-200 rounded-lg overflow-hidden">
                 {editCover ? (
                   <img

@@ -114,7 +114,7 @@ export default function Layout() {
     }
   };
 
-  // Vérifier si je suis déjà un user
+  // Vérifier si je suis déjà un utilisateur
   const isFollowing = (userId) => {
     return following.some((f) => f.followingId === userId);
   };

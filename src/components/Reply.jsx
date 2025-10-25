@@ -110,13 +110,13 @@ export default function Reply({ tweetId, reply, parentPath }) {
     }
   };
 
-  // Share
+  // Partager
   const handleShare = () => {
     navigator.clipboard.writeText(window.location.href);
     alert("Lien copié !");
   };
 
-  // Delete
+  // Supprimer
   const handleDelete = async () => {
     if (!user || user.uid !== reply.userId) return;
     if (!window.confirm("Voulez-vous vraiment supprimer cette réponse ?"))
@@ -184,7 +184,7 @@ export default function Reply({ tweetId, reply, parentPath }) {
             </Link>
           </div>
 
-          {/* À droite : Share + Supprimer */}
+          {/* À droite : Partager + Supprimer */}
           <div className="flex gap-4 items-center">
             <button
               onClick={handleShare}
